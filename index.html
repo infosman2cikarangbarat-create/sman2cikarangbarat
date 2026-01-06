@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAN 2 Cikarang Barat - Sekolah Unggul Berkualitas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="logo.JPG">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+            </div>
+            <div class="loading-text">
+                <h2>SMAN 2 CIKARANG BARAT</h2>
+                <p>Memuat sistem...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <img src="logo.JPG" alt="Logo SMAN 2 Cikarang Barat" class="logo" id="schoolLogo" onerror="this.onerror=null; this.src='https://via.placeholder.com/100x100/2C3E50/FFFFFF?text=SMAN2'">
+                    <div class="logo-text">
+                        <h1>SMAN 2 CIKARANG BARAT</h1>
+                        <p class="tagline">Sekolah Unggul Berbasis Teknologi</p>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-school"></i> Profil</a></li>
+                    <li><a href="#vision" class="nav-link"><i class="fas fa-bullseye"></i> Visi & Misi</a></li>
+                    <li><a href="#info" class="nav-link"><i class="fas fa-info-circle"></i> Informasi</a></li>
+                    <li><a href="#location" class="nav-link"><i class="fas fa-map-marker-alt"></i> Lokasi</a></li>
+                    <li><a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Galeri</a></li>
+                </ul>
+                
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 class="hero-title">Membentuk Generasi <span class="highlight">Futuristik</span></h2>
+                        <p class="hero-subtitle">Berprestasi, Berkarakter, dan Berwawasan Lingkungan</p>
+                        <p class="hero-description">Sebagai sekolah negeri terkemuka di Kabupaten Bekasi, kami berkomitmen untuk memberikan pendidikan berkualitas dengan pendekatan teknologi modern.</p>
+                        <a href="#about" class="cta-button">Jelajahi Sekolah <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="floating-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <h3>48</h3>
+                                <p>Guru Berkualitas</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>657</h3>
+                                <p>Siswa Aktif</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>A</h3>
+                                <p>Akreditasi</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>100+</h3>
+                                <p>Prestasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Profil Sekolah</h2>
+                    <p class="section-subtitle">Mengenal lebih dekat SMAN 2 Cikarang Barat</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <div class="image-placeholder" id="schoolImage">
+                                <!-- Gambar sekolah akan dimuat via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Sekolah Negeri Unggulan di Cikarang Barat</h3>
+                        <p>SMAN 2 Cikarang Barat merupakan institusi pendidikan menengah atas yang berdiri dengan komitmen kuat untuk mencetak generasi penerus bangsa yang kompeten, berkarakter, dan siap menghadapi tantangan masa depan.</p>
+                        <p>Dengan fasilitas modern dan lingkungan belajar yang kondusif, kami mempersiapkan siswa untuk meraih kesuksesan baik di tingkat nasional maupun internasional.</p>
+                        
+                        <div class="accreditation-badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="badge-text">
+                                <h4>Terakreditasi A (Unggul)</h4>
+                                <p>Berdasarkan penilaian Badan Akreditasi Nasional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission Section -->
+        <section class="vision section" id="vision">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Visi & Misi</h2>
+                    <p class="section-subtitle">Pedoman menuju pendidikan berkualitas</p>
+                </div>
+                
+                <div class="vision-content">
+                    <div class="vision-card">
+                        <div class="vision-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Visi Sekolah</h3>
+                        <div class="vision-text">
+                            <p>"Menuju Generasi yang <span class="vision-highlight">Bertaqwa, Mandiri, Berprestasi, dan Berwawasan Lingkungan</span>"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Misi Sekolah</h3>
+                        <ul class="mission-list">
+                            <li><i class="fas fa-check-circle"></i> Membentuk karakter siswa yang beriman dan bertaqwa</li>
+                            <li><i class="fas fa-check-circle"></i> Mengembangkan kemandirian dan kreativitas siswa</li>
+                            <li><i class="fas fa-check-circle"></i> Mendorong prestasi akademik dan non-akademik</li>
+                            <li><i class="fas fa-check-circle"></i> Menanamkan kesadaran lingkungan hidup</li>
+                            <li><i class="fas fa-check-circle"></i> Menerapkan pembelajaran berbasis teknologi</li>
+                            <li><i class="fas fa-check-circle"></i> Menjalin kerjasama dengan masyarakat dan dunia usaha</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- School Info Section -->
+        <section class="info section" id="info">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Informasi Umum</h2>
+                    <p class="section-subtitle">Data dan fakta tentang sekolah</p>
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h4>Nama Sekolah</h4>
+                        <p>SMAN 2 CIKARANG BARAT</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h4>NPSN</h4>
+                        <p>69964653</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                        <h4>Alamat</h4>
+                        <p>Perumahan Metland Cibitung, RT 4 RW 12, Desa Telagamurni, Cikarang Barat, Kabupaten Bekasi, Jawa Barat, 17530</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4>Status Sekolah</h4>
+                        <p>Negeri</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Akreditasi</h4>
+                        <p class="accreditation">A (Unggul)</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4>Jumlah Guru</h4>
+                        <p>48 (per data terbaru)</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Jumlah Siswa</h4>
+                        <p>657 (per data terbaru)</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Tahun Ajaran</h4>
+                        <p>2025/2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location section" id="location">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Lokasi Sekolah</h2>
+                    <p class="section-subtitle">Temukan kami di peta digital</p>
+                </div>
+                
+                <div class="location-content">
+                    <div class="location-info">
+                        <h3>Koordinat Geografis</h3>
+                        <div class="coordinates">
+                            <div class="coordinate">
+                                <h4>Lintang</h4>
+                                <p>-6.255100000000</p>
+                            </div>
+                            <div class="coordinate">
+                                <h4>Bujur</h4>
+                                <p>107.115600000000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="location-details">
+                            <h4>Akses Menuju Sekolah</h4>
+                            <ul>
+                                <li><i class="fas fa-car"></i> Dapat diakses melalui jalan utama Perumahan Metland Cibitung</li>
+                                <li><i class="fas fa-bus"></i> Terdapat angkutan umum menuju kawasan sekolah</li>
+                                <li><i class="fas fa-parking"></i> Area parkir yang luas untuk kendaraan pribadi</li>
+                                <li><i class="fas fa-tree"></i> Lingkungan asri dan nyaman untuk belajar</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="location-map">
+                        <div class="map-container" id="mapContainer">
+                            <!-- Peta akan dimuat via JavaScript -->
+                            <div class="map-placeholder">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <p>Memuat peta lokasi...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery section" id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Galeri Sekolah</h2>
+                    <p class="section-subtitle">Momen-momen kebanggaan SMAN 2 Cikarang Barat</p>
+                </div>
+                
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Gambar galeri akan dimuat via JavaScript -->
+                </div>
+                
+                <div class="gallery-controls">
+                    <button class="gallery-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="gallery-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.JPG" alt="Logo SMAN 2 Cikarang Barat" class="footer-logo-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/80x80/2C3E50/FFFFFF?text=SMAN2'">
+                    <div class="footer-logo-text">
+                        <h3>SMAN 2 CIKARANG BARAT</h3>
+                        <p>Sekolah Unggul Berbasis Teknologi</p>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Kontak Kami</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (021) 1234-5678</li>
+                        <li><i class="fas fa-envelope"></i> info@sman2cikbar.sch.id</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Perumahan Metland Cibitung, Cikarang Barat, Bekasi</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Media Sosial</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span class="footer-highlight">SMAN 2 Cikarang Barat</span> - Semua Hak Dilindungi</p>
+                <p class="footer-footnote">SMAN 2 Cikarang Barat - 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
