@@ -8,7 +8,7 @@ const schoolData = {
     address: "Perumahan Metland Cibitung, RT 4 RW 12, Desa Telagamurni, Cikarang Barat, Kabupaten Bekasi, Jawa Barat, 17530",
     status: "Negeri",
     accreditation: "A",
-    teachers: 48,
+    teachers: 34,
     students: 657,
     latitude: -6.255100000000,
     longitude: 107.115600000000,
