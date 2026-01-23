@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Pembelajaran Bahasa Arab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <h1>Belajar <span>Bahasa Arab</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" data-section="home">Beranda</a></li>
+                    <li><a href="#" class="nav-link" data-section="vocabulary">Kosa Kata</a></li>
+                    <li><a href="#" class="nav-link" data-section="quiz">Kuis</a></li>
+                    <li><a href="#" class="nav-link" data-section="progress">Kemajuan</a></li>
+                    <li><a href="#" id="search-btn"><i class="fas fa-search"></i> Cari</a></li>
+                    <li><a href="#" id="stats-btn"><i class="fas fa-chart-bar"></i> Statistik</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <!-- Beranda -->
+        <section id="home" class="section active-section">
+            <div class="hero">
+                <h2>Program Pembelajaran Interaktif</h2>
+                <p>Mulai perjalanan Anda belajar bahasa Arab hari ini dengan koleksi kosa kata terlengkap dan kuis yang menantang.</p>
+                <a href="#" class="cta-button mulai-belajar">Mulai Belajar Sekarang</a>
+            </div>
+            
+            <h3 class="section-title">Apa yang Baru?</h3>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header"><i class="fas fa-plus-circle"></i><h3>Kosa Kata Tambahan</h3></div>
+                    <div class="card-body"><p>Kini tersedia kategori Angka dan Kata Kerja populer untuk memperluas pemahaman Anda.</p></div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><i class="fas fa-vial"></i><h3>Kuis Dinamis</h3></div>
+                    <div class="card-body"><p>Uji kemampuan dengan sistem kuis acak yang langsung memberikan penilaian skor real-time.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kosa Kata -->
+        <section id="vocabulary" class="section hidden">
+            <div class="section-header">
+                <h2 class="section-title">Daftar Kosa Kata</h2>
+                <div class="section-controls">
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">Semua Kategori</option>
+                    </select>
+                    <button id="random-vocab" class="btn btn-secondary">
+                        <i class="fas fa-random"></i> Kata Acak
+                    </button>
+                </div>
+            </div>
+            <div class="card-container" id="vocab-display">
+                <!-- Kosa kata akan diisi oleh JavaScript -->
+            </div>
+            
+            <div class="card">
+                <div class="card-header"><i class="fas fa-star"></i><h3>Kata Hari Ini</h3></div>
+                <div class="card-body">
+                    <div class="arabic-text" id="daily-arabic">...</div>
+                    <p style="text-align: center;"><strong>Latin:</strong> <span id="daily-latin">...</span></p>
+                    <p style="text-align: center;"><strong>Arti:</strong> <span id="daily-meaning">...</span></p>
+                    <p style="text-align: center; font-style: italic; margin-top: 10px;" id="daily-example"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kuis -->
+        <section id="quiz" class="section hidden">
+            <div class="section-header">
+                <h2 class="section-title">Kuis Kemampuan</h2>
+                <div class="section-controls">
+                    <button id="reset-quiz" class="btn btn-secondary">
+                        <i class="fas fa-redo"></i> Ulang Kuis
+                    </button>
+                </div>
+            </div>
+            <div class="quiz-container">
+                <div class="quiz-question" id="quiz-question">Menyiapkan kuis...</div>
+                <div class="quiz-options" id="quiz-options"></div>
+                <div class="quiz-buttons">
+                    <button class="btn btn-secondary" id="btn-hint">
+                        <i class="fas fa-lightbulb"></i> Petunjuk
+                    </button>
+                    <button class="btn btn-primary" id="btn-check">
+                        <i class="fas fa-check"></i> Periksa Jawaban
+                    </button>
+                    <button class="btn btn-secondary" id="btn-next">
+                        <i class="fas fa-arrow-right"></i> Soal Selanjutnya
+                    </button>
+                </div>
+                <div class="result" id="quiz-result"></div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar"><div class="progress" id="quiz-bar"></div></div>
+                    <div class="progress-text">
+                        <span id="quiz-progress-text">Soal 0 dari 0</span>
+                        <span id="quiz-score-text">Skor: 0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kemajuan -->
+        <section id="progress" class="section hidden">
+            <h2 class="section-title">Capaian Anda</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header"><i class="fas fa-chart-bar"></i><h3>Statistik Kuis</h3></div>
+                    <div class="card-body">
+                        <div class="stat-item">
+                            <span>Skor Tertinggi:</span>
+                            <span id="stat-high-score">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Kuis Dikerjakan:</span>
+                            <span id="stat-attempts">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Rata-rata Skor:</span>
+                            <span id="stat-average">0</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar"><div class="progress" id="stat-bar" style="width: 0%"></div></div>
+                            <div class="progress-text">
+                                <span>Penguasaan Kosa Kata</span>
+                                <span id="stat-percentage">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header"><i class="fas fa-trophy"></i><h3>Pencapaian</h3></div>
+                    <div class="card-body">
+                        <div id="achievements-list">
+                            <!-- Pencapaian akan diisi oleh JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header"><i class="fas fa-history"></i><h3>Riwayat Belajar</h3></div>
+                <div class="card-body">
+                    <div id="learning-history">
+                        <!-- Riwayat akan diisi oleh JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Donny Nugroho | Belajar Bahasa Arab</p>
+            <p class="footer-sub">Dibuat dengan ❤️ untuk pembelajaran bahasa Arab yang lebih baik</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
